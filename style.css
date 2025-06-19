@@ -1,4 +1,11 @@
-
+@font-face {
+    font-family: poppins;
+    src: url(Poppins/Poppins-Light.ttf)
+}
+@font-face {
+    font-family: itim;
+    src: url(Itim-Regular.ttf);
+}
 .discount {
    background-color: rgba(238, 170, 62, 1);
    text-align: center;
@@ -10,7 +17,8 @@
 
 
    h1 {
-       font-size: 250%;
+       font-size: 270%;
+       font-weight: lighter;
        padding: 2%;
        font-family: itim;
    }
@@ -23,6 +31,10 @@
    justify-content: space-between;
    width: 90%;
    margin: auto;
+   h3{
+    font-weight: bold;
+    font-size: 120%;
+   }
 }
 
 
@@ -69,7 +81,6 @@
    width: 80%;
    margin: auto;
    text-align: center;
-   padding-top: 7%;
    font-family: poppins;
    font-size: 120%;
 
@@ -87,7 +98,7 @@
        padding: 5px 30px;
        position: absolute;
        left: 4;
-       top: 80%;
+       top: 82%;
        z-index: 2;
    }
 }
@@ -105,6 +116,7 @@
 
    h2 {
        font-size: 300%;
+       font-weight: bolder;
        color: rgba(101, 143, 61, 1);
    }
 }
@@ -197,7 +209,6 @@
    .item {
        padding-top: 10%;
    }
-
 
    .item .price {
        top: 9%;
