@@ -34,6 +34,7 @@
    h3{
     font-weight: bold;
     font-size: 120%;
+    width:30%;
    }
 }
 
@@ -124,7 +125,9 @@
 @media only screen and (max-width: 600px) {
    .discount {
        font-size: 90%;
-
+h1{
+    font-size: 35px;
+}
 
        img {
            width: 70%;
@@ -137,19 +140,25 @@
        flex-direction: column;
        width: 90%;
        margin: auto;
+       h3{
+        width:100%;
+        font-size: 18px;
+        margin-bottom: 12%;
+       }
    }
 
 
    .item {
-       padding-top: 10%;
+       padding-top: 5%;
    }
 
 
    .item .price {
-       top: 3%;
-       left: 5%;
+       top: 0%;
+       left: 8%;
        background: rgba(255, 255, 255, 0.8);
-       padding: 8px 8px;
+       padding: 7px 7px;
+       font-size:14px ;
    }
 
 
@@ -157,6 +166,7 @@
        flex-direction: column;
        font-size: 100%;
        margin: auto;
+
 
 
        h2 {
@@ -173,7 +183,7 @@
 
    .product-categories .item span {
        width: 20%;
-       margin-top: 2%;
+       margin-top:-2%;
    }
 
 
@@ -192,52 +202,69 @@
 @media screen and (min-width: 601px) and (max-width: 999px) {
       .discount {
        font-size: 1.6rem;
-
-
+       width: 100%;
+       display: grid;
        img {
-           width: 40%;
-           height: 40%;
+           width: 360px;
+           height: 250px;
+       }
+       h1{
+        font-size: 55px;
        }
    }
 
 
    .items {
        flex-wrap: wrap;
-       width: 95%;
+       justify-content: center;
+       width: 100%;
        margin: auto;
+       h3{
+        width:100%;
+        font-size: 27px;
+        margin-top: -1%;
+       }
    }
    .item {
-       padding-top: 10%;
+       padding-top: 5%;
    }
 
    .item .price {
-       top: 9%;
-       left: 25%;
+       top: 1%;
+       left: 0%;
        background: rgba(255, 255, 255, 0.8);
-       padding: 9px 9px;
+       padding: 10px 10px;
+       font-size: 20px;
    }
    .product-categories {
-       flex-wrap: wrap;
-       font-size: 1.6rem;
-       justify-content: center;
+       font-size: 1.4rem;
+justify-content: center;
+       display: grid;
+       width: 100%;
        margin: auto;
-       h2 {
-           font-size: 200%;
-       }
+
    }
    .product-categories img {
-       width: 280px;
-       height: 200px;
+       width: 450px;
+       height: 290px;
    }
    .product-categories .item span {
        width: 35%;
-       margin-top: 2%;
+       margin-top:-1%;
+       font-size: 25px;
    }
    .fresh-grocery {
-       width: 50%;
        button {
-           width: 50%;
+           width: 35%;
            padding: 2% 0%;
+           font-size: 25px;
+
+       }
+       h2{
+        font-size: 50px;
+       }
+       p{
+       font-size:22px;
        }
    }
 
@@ -245,55 +272,66 @@
 @media (min-width: 1000px) and (max-width: 1300px) {
        .discount {
        font-size: 1.6rem;
-
-
-       img {
-           width: 40%;
-           height: 40%;
+       h1{
+        font-size: 60px;
+       }
+       img{
+        width:210px;
+        height:170px;
        }
    }
 
-
    .items {
-       flex-wrap: wrap;
-       width: 95%;
+      
+       width: 100%;
        margin: auto;
-   }
-   .item {
-       padding-top: 10%;
-   }
+       h3{
+        font-size: 22px;
+        margin-top: -2%;
+       }
 
-
+   }
    .item .price {
-       top: 9%;
-       left: 25%;
+       top: -5%;
+       left: -3%;
        background: rgba(255, 255, 255, 0.8);
        padding: 9px 9px;
    }
-
+   .price{
+    font-size: 20px;
+   }
    .product-categories {
        flex-wrap: wrap;
-       font-size: 1.6rem;
+       font-size: 20px;
        justify-content: center;
        margin: auto;
+       width: 90%;
        h2 {
-           font-size: 200%;
+           font-size: 34px;
        }
    }
    .product-categories img {
-       width: 280px;
+       width: 260px;
        height: 200px;
    }
    .product-categories .item span {
-       width: 35%;
-       margin-top: 2%;
+       width: 30%;
+       margin-top: -6%;
+       font-size: 17px;
    }
    .fresh-grocery {
-       width: 50%;
+    h1{
+font-size: 50px;
+    }
        button {
-           width: 50%;
+           width: 40%;
+           font-size: 20px;
            padding: 2% 0%;
        }
+       p{
+        font-size: 16px;
+       }
    }
+
 
 }
