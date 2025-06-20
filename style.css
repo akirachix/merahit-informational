@@ -1,0 +1,337 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins/Poppins-Light.ttf)
+}
+@font-face {
+    font-family: itim;
+    src: url(Itim-Regular.ttf);
+}
+.discount {
+   background-color: rgba(238, 170, 62, 1);
+   text-align: center;
+   font-weight: lighter;
+   color: black;
+   font-size: 150%;
+   margin-top: 5%;
+   font-family: poppins;
+
+
+   h1 {
+       font-size: 270%;
+       font-weight: lighter;
+       padding: 2%;
+       font-family: itim;
+   }
+}
+
+
+.items {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   margin: auto;
+   h3{
+    font-weight: bold;
+    font-size: 120%;
+    width:30%;
+   }
+}
+
+
+.item {
+   position: relative;
+   text-align: center;
+   padding: 2%;
+
+
+   img {
+       height: 250px;
+       width: 300px;
+       border-radius: 14px;
+   }
+}
+
+
+.item .price {
+   position: absolute;
+   top: -10%;
+   left: -5%;
+   background: rgba(255, 255, 255, 0.8);
+   padding: 15px 15px;
+   border-radius: 50%;
+}
+
+
+.original-price {
+   text-decoration: line-through;
+   color: red;
+}
+
+
+.discounted-price {
+   color: #000;
+   font-weight: bold;
+}
+
+
+.product-categories {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   font-family: poppins;
+   font-size: 120%;
+
+
+   img {
+       height: 300px;
+       width: 400px;
+       position: relative;
+   }
+
+
+   .item span {
+       background-color: rgba(101, 143, 61, 1);
+       color: white;
+       padding: 5px 30px;
+       position: absolute;
+       left: 4;
+       top: 82%;
+       z-index: 2;
+   }
+}
+.fresh-grocery {
+   button {
+       background-color: rgba(101, 143, 61, 1);
+       padding: 3% 3% 3% 4.5%;
+       width: 35%;
+       border: none;
+       border-radius: 20px;
+       color: white;
+       font-size: 110%;
+   }
+
+
+   h2 {
+       font-size: 300%;
+       font-weight: bolder;
+       color: rgba(101, 143, 61, 1);
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .discount {
+       font-size: 90%;
+h1{
+    font-size: 35px;
+}
+
+       img {
+           width: 70%;
+           height: 70%;
+       }
+   }
+
+
+   .items {
+       flex-direction: column;
+       width: 90%;
+       margin: auto;
+       h3{
+        width:100%;
+        font-size: 18px;
+        margin-bottom: 12%;
+       }
+   }
+
+
+   .item {
+       padding-top: 5%;
+   }
+
+
+   .item .price {
+       top: 0%;
+       left: 8%;
+       background: rgba(255, 255, 255, 0.8);
+       padding: 7px 7px;
+       font-size:14px ;
+   }
+
+
+   .product-categories {
+       flex-direction: column;
+       font-size: 100%;
+       margin: auto;
+
+
+
+       h2 {
+           font-size: 170%;
+       }
+   }
+
+
+   .product-categories img {
+       width: 300px;
+       height: 200px;
+   }
+
+
+   .product-categories .item span {
+       width: 20%;
+       margin-top:-2%;
+   }
+
+
+   .fresh-grocery {
+       width: 90%;
+
+
+       button {
+           width: 40%;
+           padding: 2% 0%;
+       }
+   }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 999px) {
+      .discount {
+       font-size: 1.6rem;
+       width: 100%;
+       display: grid;
+       img {
+           width: 360px;
+           height: 250px;
+       }
+       h1{
+        font-size: 55px;
+       }
+   }
+
+
+   .items {
+       flex-wrap: wrap;
+       justify-content: center;
+       width: 100%;
+       margin: auto;
+       h3{
+        width:100%;
+        font-size: 27px;
+        margin-top: -1%;
+       }
+   }
+   .item {
+       padding-top: 5%;
+   }
+
+   .item .price {
+       top: 1%;
+       left: 0%;
+       background: rgba(255, 255, 255, 0.8);
+       padding: 10px 10px;
+       font-size: 20px;
+   }
+   .product-categories {
+       font-size: 1.4rem;
+justify-content: center;
+       display: grid;
+       width: 100%;
+       margin: auto;
+
+   }
+   .product-categories img {
+       width: 450px;
+       height: 290px;
+   }
+   .product-categories .item span {
+       width: 35%;
+       margin-top:-1%;
+       font-size: 25px;
+   }
+   .fresh-grocery {
+       button {
+           width: 35%;
+           padding: 2% 0%;
+           font-size: 25px;
+
+       }
+       h2{
+        font-size: 50px;
+       }
+       p{
+       font-size:22px;
+       }
+   }
+
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+       .discount {
+       font-size: 1.6rem;
+       h1{
+        font-size: 60px;
+       }
+       img{
+        width:210px;
+        height:170px;
+       }
+   }
+
+   .items {
+      
+       width: 100%;
+       margin: auto;
+       h3{
+        font-size: 22px;
+        margin-top: -2%;
+       }
+
+   }
+   .item .price {
+       top: -5%;
+       left: -3%;
+       background: rgba(255, 255, 255, 0.8);
+       padding: 9px 9px;
+   }
+   .price{
+    font-size: 20px;
+   }
+   .product-categories {
+       flex-wrap: wrap;
+       font-size: 20px;
+       justify-content: center;
+       margin: auto;
+       width: 90%;
+       h2 {
+           font-size: 34px;
+       }
+   }
+   .product-categories img {
+       width: 260px;
+       height: 200px;
+   }
+   .product-categories .item span {
+       width: 30%;
+       margin-top: -6%;
+       font-size: 17px;
+   }
+   .fresh-grocery {
+    h1{
+font-size: 50px;
+    }
+       button {
+           width: 40%;
+           font-size: 20px;
+           padding: 2% 0%;
+       }
+       p{
+        font-size: 16px;
+       }
+   }
+
+
+}
