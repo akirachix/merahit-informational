@@ -1,1 +1,0 @@
-# merahit-informational
