@@ -2,491 +2,948 @@
     font-family: poppins;
     src: url(Poppins/Poppins-Regular.ttf);
 }
+
 @font-face {
     font-family: itim;
     src: url(Itim-Regular.ttf);
 }
+
+.discount {
+    background-color: rgba(238, 170, 62, 1);
+    text-align: center;
+    font-weight: lighter;
+    color: black;
+    font-size: 150%;
+    margin-top: 5%;
+    font-family: poppins;
+
+
+    h1 {
+        font-size: 270%;
+        font-weight: lighter;
+        padding: 2%;
+        font-family: itim;
+    }
+}
+
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+    h3 {
+        font-weight: bold;
+        font-size: 120%;
+        width: 30%;
+    }
+}
+
+
+.item {
+    position: relative;
+    text-align: center;
+    padding: 2%;
+
+
+    img {
+        height: 250px;
+        width: 300px;
+        border-radius: 14px;
+    }
+}
+
+
+.item .price {
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 15px;
+    border-radius: 50%;
+}
+
+
+.original-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+
+.discounted-price {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.product-categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: poppins;
+    font-size: 120%;
+
+
+    img {
+        height: 300px;
+        width: 400px;
+        position: relative;
+    }
+
+
+    .item span {
+        background-color: rgba(101, 143, 61, 1);
+        color: white;
+        padding: 5px 30px;
+        position: absolute;
+        left: 4;
+        top: 82%;
+        z-index: 2;
+    }
+}
+
+.fresh-grocery {
+    button {
+        background-color: rgba(101, 143, 61, 1);
+        padding: 3% 3% 3% 4.5%;
+        width: 35%;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-size: 110%;
+    }
+
+
+    h2 {
+        font-size: 300%;
+        font-weight: bolder;
+        color: rgba(101, 143, 61, 1);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: -0;
+        overflow-x: hidden;
+    }
+
+    .discount {
+        font-size: 90%;
+
+        h1 {
+            font-size: 35px;
+        }
+
+        img {
+            width: 70%;
+            height: 70%;
+        }
+    }
+
+
+    .items {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        h3 {
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 12%;
+        }
+    }
+
+
+    .item {
+        padding-top: 5%;
+    }
+
+
+    .item .price {
+        top: 0%;
+        left: 8%;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 7px 7px;
+        font-size: 14px;
+    }
+
+
+    .product-categories {
+        flex-direction: column;
+        font-size: 100%;
+        margin: auto;
+
+
+
+        h2 {
+            font-size: 170%;
+        }
+    }
+
+
+    .product-categories img {
+        width: 300px;
+        height: 200px;
+    }
+
+
+    .product-categories .item span {
+        width: 20%;
+        margin-top: -2%;
+    }
+
+
+    .fresh-grocery {
+        width: 90%;
+
+
+        button {
+            width: 40%;
+            padding: 2% 0%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 999px) {
+    .discount {
+        font-size: 1.6rem;
+        width: 100vw;
+        display: grid;
+
+        img {
+            width: 360px;
+            height: 250px;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+
+    .items {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+
+        h3 {
+            width: 100%;
+            font-size: 27px;
+            margin-top: -1%;
+        }
+    }
+
+    .item {
+        padding-top: 5%;
+    }
+
+    .item .price {
+        top: 1%;
+        left: 0%;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+
+    .product-categories {
+        font-size: 1.4rem;
+        justify-content: center;
+        display: grid;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .product-categories img {
+        width: 450px;
+        height: 290px;
+    }
+
+    .product-categories .item span {
+        width: 35%;
+        margin-top: -1%;
+        font-size: 25px;
+    }
+
+    .fresh-grocery {
+        button {
+            width: 35%;
+            padding: 2% 0%;
+            font-size: 25px;
+
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .discount {
+        /* width: 90%; */
+        font-size: 1.6rem;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        img {
+            width: 210px;
+            height: 160px;
+        }
+    }
+
+    .items {
+
+        width: 100%;
+        margin: auto;
+
+        h3 {
+            font-size: 20px;
+            margin-top: -2%;
+        }
+
+    }
+
+    .item .price {
+        top: -5%;
+        left: -3%;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 9px 9px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .product-categories {
+        flex-wrap: wrap;
+        font-size: 20px;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+
+        h2 {
+            font-size: 34px;
+        }
+    }
+
+    .product-categories img {
+        width: 255px;
+        height: 200px;
+    }
+
+    .product-categories .item span {
+        width: 30%;
+        margin-top: -6%;
+        font-size: 17px;
+    }
+
+    .fresh-grocery {
+        h1 {
+            font-size: 50px;
+        }
+
+        button {
+            width: 40%;
+            font-size: 20px;
+            padding: 2% 0%;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+/*  Contact Us */
 #get-app {
-   display: flex;
-   width: 80%;
-   justify-content: space-between;
-   margin: auto;
-   align-items: start;
-   font-size: 120%;
-   font-family: poppins;
-   margin-top: 5%;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: start;
+    font-size: 120%;
+    font-family: poppins;
+    margin-top: 5%;
 
 
-   h1 {
-       font-size: 5vw;
-       font-family: itim;
-   }
 
 
-   button {
-       display: flex;
-       align-items: center;
-       background-color: #000;
-       border-radius: 30px;
-       color: white;
-       padding: 0% 8%;
-   }
+    h1 {
+        font-size: 5vw;
+        font-family: itim;
+    }
+
+
+    button {
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        border-radius: 30px;
+        color: white;
+        padding: 0% 8%;
+    }
 }
 
 
 #contact {
-   background-color:  rgba(101, 143, 61, 1);
-   margin-top: -12%;
-   z-index: 1;
-   position: relative;
-   right: 0;
-   left: 0;
-   font-family: poppins;
-   font-size: 120%;
+    background-color: rgba(101, 143, 61, 1);
+    margin-top: -12%;
+    z-index: 1;
+    position: relative;
+    right: 0;
+    left: 0;
+    font-family: poppins;
+    font-size: 120%;
 
 
-   input {
-       padding: 3%;
-       width: 13.5vw;
-   }
+    input {
+        padding: 3%;
+        width: 13.5vw;
+    }
 
 
-   textarea {
-      padding: 2%;
-      width: 40.5vw;
-      height: 15vh;
-       margin-top: 8%;
-   }
+    textarea {
+        padding: 2%;
+        width: 40.5vw;
+        height: 15vh;
+        margin-top: 8%;
+    }
 
 
-   h1 {
-       color: white;
-       font-family: poppins;
-       font-size: 350%;
-       font-weight: lighter;
-       text-align: center;
-   }
+    h1 {
+        color: white;
+        font-family: poppins;
+        font-size: 350%;
+        font-weight: lighter;
+        text-align: center;
+    }
 
 
-   h2 {
-    margin-top: 6vh;
-       font-size: 250%;
-   }
+    h2 {
+        margin-top: 6vh;
+        font-size: 250%;
+    }
 
 
 }
 
 .contact-us {
-   display: flex;
-   width: 80%;
-   justify-content: space-between;
-   margin: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
 }
 
 
 .name {
-   display: flex;
-   gap: 20%;
-   margin-top: 7%;
-   line-height: 1.6;
+    display: flex;
+    gap: 20%;
+    margin-top: 7%;
+    line-height: 1.6;
 }
 
 
 .contact-info {
-   background-color: white;
-   padding: 0% 4% ;
-   line-height: 1.7;
+    background-color: white;
+    padding: 0% 4%;
+    line-height: 1.7;
 
 
-   span {
-       padding-left: 10%;
-   }
+    span {
+        padding-left: 10%;
+    }
 }
-#phone{
+
+#phone {
     margin-top: 2vh;
     margin-left: -0.5vw;
 }
-#email{
+
+#email {
     margin-top: 2.2vh;
 }
-#whatsapp{
+
+#whatsapp {
     margin-top: 2.2vh;
     margin-left: -0.5vw;
 }
-#text{
+
+#text {
     margin-left: -1vw;
 }
 
-.socials{
+.socials {
     display: flex;
     width: 15vw;
     gap: 1vw;
 }
 
 #send-now {
-   padding: 2% 12%;
-   background-color: orange;
-   color: white;
-   cursor: pointer;
-   border: none;
-   border-radius: 10px;
-   margin-top: 6%;
-   font-size: 120%;
-   font-family: poppins;
+    padding: 2% 12%;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 6%;
+    font-size: 120%;
+    font-family: poppins;
 }
 
 
 #send-now :hover {
-   background-color: rgba(101, 143, 61, 1);
+    background-color: rgba(101, 143, 61, 1);
 
 
 }
 
 
 #copyright {
-   text-align: center;
-   color: white;
-   padding: 0.5%;
-   background-color: rgba(101, 143, 61, 1);
-   font-size: 120%;
-   font-family: poppins;
-   
-}
+    text-align: center;
+    color: white;
+    padding: 0.5%;
+    background-color: rgba(101, 143, 61, 1);
+    font-size: 120%;
+    font-family: poppins;
 
+}
 
 
 @media only screen and (max-width: 600px) {
- #get-app {
-   display: block;
-       font-size: 100%;
-       text-align: center;
+    #get-app {
+        display: block;
+        font-size: 100%;
+        text-align: center;
 
 
-       img {
-           width: 90%;
-           height: 90%;
-           margin-top: 5%;
-       }
+        img {
+            width: 90%;
+            height: 90%;
+            margin-top: 5%;
+        }
 
 
-       width:100%;
+        width:100%;
 
 
-       h1 {
-           font-size: 250%;
-       }
-    
-#get{
-    margin: auto;
+        h1 {
+            font-size: 250%;
+        }
+
+        #get {
+            margin: auto;
+        }
+
+        button {
+            padding: 5% 5%;
+            font-size: small;
+            margin: auto;
+            width: 60%;
+            margin-top: 2vh;
+        }
+    }
+
+    #play-store {
+        width: 15vw;
+        height: 7vh;
+    }
+
+    .name {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    #contact {
+        margin-top: -50%;
+        width: 100%;
+        font-size: 100%;
+
+
+        input {
+            padding: 2%;
+            width: 82vw;
+        }
+
+
+        textarea {
+            padding: 2%;
+            margin-top: 8%;
+            width: 82vw;
+        }
+
+
+        h1 {
+            font-size: 250%;
+        }
+
+
+        h2 {
+            font-size: 150%;
+            text-align: center;
+        }
+    }
+
+
+    .contact-us {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    @media only screen and (min-width: 538px) and (max-width: 541px) {
+        #get-app {
+            display: block;
+            font-size: 100%;
+            text-align: center;
+
+
+            img {
+                width: 90%;
+                height: 90%;
+                margin-top: 5%;
+            }
+
+
+            width:100%;
+
+
+            h1 {
+                font-size: 250%;
+            }
+
+            #get {
+                margin: auto;
+            }
+
+            button {
+                padding: 5% 5%;
+                font-size: small;
+                margin: auto;
+                width: 40vw;
+                margin-top: 2vh;
+            }
+        }
+
+        #play-store {
+            width: 15vw;
+            height: 7vh;
+        }
+
+        .name {
+            flex-direction: column;
+            gap: 5vh;
+        }
+    }
+
+
+    .contact-info {
+        padding: 2%;
+
+
+        span {
+            padding-left: 10%;
+        }
+    }
+
+
+    #send-now {
+        padding: 2% 5%;
+        border-radius: 15px;
+        margin-top: 6%;
+        font-size: 100%;
+        margin-bottom: 5%;
+        width: 86vw;
+    }
+
+
+    #copyright {
+        text-align: center;
+        color: white;
+        padding: 4% 2% 1%;
+        font-size: 80%;
+    }
+
+    .socials {
+        width: 80vw;
+        margin-left: 5vw;
+    }
+
+    #phone {
+        margin-top: 1.7vh;
+        margin-left: -2vw;
+    }
+
+    #email {
+        margin-top: 2vh;
+    }
+
+    #whatsapp {
+        margin-top: 1.7vh;
+        margin-left: -2vw;
+    }
 }
 
-       button {
-           padding: 0% 5%;
-           font-size: small;
-           margin: auto;
-           width: 60vw;
-           margin-top: 2vh;
-       }
-   }
-   #play-store{
-    width:15vw;
-    height: 7vh;
-   }
-
-.name{
-    flex-direction: column;
-    gap: 5vh;
-}
-   #contact {
-       margin-top: -50%;
-       width: 100%;
-       font-size: 100%;
-
-
-       input {
-           padding: 2%;
-           width: 82vw;
-       }
-
-
-       textarea {
-           padding:2%;
-           margin-top: 8%;
-           width: 82vw;
-       }
-
-
-       h1 {
-           font-size: 250%;
-       }
-
-
-       h2 {
-           font-size: 150%;
-           text-align: center;
-       }
-   }
-
-
-   .contact-us {
-       flex-direction: column;
-       width: 90%;
-   }
-
-
-   .contact-info {
-       padding:2%;
-
-
-       span {
-           padding-left: 10%;
-       }
-   }
-
-
-   #send-now {
-       padding: 2% 5%;
-       border-radius: 15px;
-       margin-top: 6%;
-       font-size: 100%;
-       margin-bottom: 5%;
-       width: 86vw;
-   }
-
-
-   #copyright {
-       text-align: center;
-       color: white;
-       padding: 4% 2% 1%;
-       font-size: 80%;
-   }
-.socials{
-    width: 90vw;
-    margin-left: 5vw;
-}
-#phone{
-    margin-top: 1.7vh;
-    margin-left: -2vw;
-}
-#email{
-    margin-top: 2vh;
-}
-#whatsapp{
-    margin-top: 1.7vh;
-    margin-left: -2vw;
-}
-}
-#text{
+#text {
     margin-left: 0.0vw;
 }
+
 @media screen and (min-width: 601px) and (max-width: 999px) {
-   #get-app {
-      display: block;
-       font-size: 120%;
-      
-       margin-left: 5vw;
+    body {
+        overflow-x: hidden;
+    }
+
+    #get-app {
+        display: block;
+        font-size: 120%;
+
+        margin-left: 5vw;
 
 
-       img {
-           width: 90%;
-           height: 90%;
-           margin-top: 5%;
-       }
+        img {
+            width: 90%;
+            height: 90%;
+            margin-top: 5%;
+        }
 
 
-       width:100%;
+        width:100%;
 
 
-       h1 {
-           font-size: 280%;
-           margin-left: 28vw;
-       }
-       p{
-         margin-left: 18vw;
-       }
+        h1 {
+            font-size: 280%;
+            margin-left: 28vw;
+        }
+
+        p {
+            margin-left: 18vw;
+        }
 
 
-       button {
-           padding: 0% 6%;
-           font-size: small;
-           margin-left: 27.5vw;
-           p{
-            margin-left: -5vw;
-           }
-       }
-    
-#get{
-    margin: auto;
-    width: 50vw;
-}
-   }
-   #contact {
-       margin-top: -40%;
-       width: 93vw;
-       font-size: 0.8rem;
-       display: flex;
-       padding: 4%;
-       input {
-           padding: 2%;
-           width: 32%;
-       }
-       textarea {
-           padding: 2%;
-           margin-top: 8%;
-           width: 46.7vw;
-       }
-       h1 {
-           font-size: 3em;
-       }
-       h2 {
-           font-size: 2.5em;
-           text-align: center;
-       }
-   }
-   .contact-us {
-       display: flex;
-       width: 100%;
-   }
-   .contact-info {
-       padding: 3% 3%;
-       margin-top: -4.2vh;
+        button {
+            padding: 0% 6%;
+            font-size: small;
+            margin-left: 27.5vw;
+
+            p {
+                margin-left: -5vw;
+            }
+        }
+
+        #get {
+            margin: auto;
+            width: 45vw;
+        }
+    }
+
+    #contact {
+        margin-top: -40%;
+        width: 93vw;
+        font-size: 0.8rem;
+        display: flex;
+        padding: 4%;
+
+        input {
+            padding: 2%;
+            width: 28%;
+        }
+
+        textarea {
+            padding: 2%;
+            margin-top: 8%;
+            width: 46.7vw;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+    }
+
+    .contact-us {
+        display: flex;
+        width: 100vw;
+    }
+
+    .contact-info {
+        padding: 3% 3%;
+        margin-top: -4.2vh;
 
 
 
-       span {
-           padding-left: 10%;
-       }
-   }
-   #send-now {
-       padding: 2% 5%;
-       border-radius: 15px;
-       margin-top: 6%;
-       font-size: 150%;
-       margin-bottom: 5%;
-   }
-   #copyright {
-       text-align: center;
-       color: white;
-       padding: 4% 2% 1%;
-       font-size: 1.2rem;
-       width: 97vw;
-   }
+        span {
+            padding-left: 10%;
+        }
+    }
 
-.socials{
-    width: 35vw;
-    font-size: 1.2em;
-}
-#phone{
-    margin-top: 1.8vh;
-}
-#email{
-    margin-top: 1.8vh;
-}
-#whatsapp{
-    margin-top: 1.6vh;
-  
-}
+    #send-now {
+        padding: 2% 5%;
+        border-radius: 15px;
+        margin-top: 6%;
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+
+    #copyright {
+        text-align: center;
+        color: white;
+        padding: 4% 2% 1%;
+        font-size: 1.2rem;
+        width: 97vw;
+    }
+
+    .socials {
+        width: 30vw;
+        font-size: 1.2em;
+    }
+
+    #phone {
+        margin-top: 1.8vh;
+    }
+
+    #email {
+        margin-top: 1.8vh;
+    }
+
+    #whatsapp {
+        margin-top: 1.6vh;
+
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
-       #get-app {
-       /* flex-direction: column; */
-       justify-content: center;
-       font-size: 120%;
-       text-align: center;
-       margin-bottom: 50vh;
+    #get-app {
+        /* flex-direction: column; */
+        justify-content: center;
+        font-size: 120%;
+        text-align: center;
+        margin-bottom: 50vh;
 
 
-       img {
-           width: 90%;
-           height: 90%;
-           position: relative;
-           top: 5vh;
-       }
+        img {
+            width: 90%;
+            height: 90%;
+            position: relative;
+            top: 5vh;
+        }
 
 
-       width:100%;
+        width:100%;
 
 
-       h1 {
-           font-size: 280%;
-       }
+        h1 {
+            font-size: 280%;
+        }
 
 
-       button {
-           padding: 0% 2%;
-           font-size: small;
-           margin-left: 25%;
-           width: 18vw;
-       }
-   }
-   #contact {
-       margin-top: -50%;
-       width: 100%;
-       font-size: 1.6rem;
-       display: flex;
-       input {
-           padding: 2%;
-           width: 30.5%;
-       }
-       textarea {
-           padding: 2%;
-           margin-top: 8%;
-           width: 46.5vw;
-       }
-       h1 {
-           font-size: 2em;
-       }
-       h2 {
-           font-size: 1.4em;
-           text-align: center;
-       }
-   }
-   .contact-us {
-       width: 100%;
-       padding: 5%;
-   }
-   .contact-info {
-       padding: 2% 2%;
-       margin-top: -8.3vh;
+        button {
+            padding: 0% 2%;
+            font-size: small;
+            margin-left: 25%;
+            width: 18vw;
+        }
+    }
+
+    #contact {
+        margin-top: -50%;
+        width: 100%;
+        font-size: 1.6rem;
+        display: flex;
+
+        input {
+            padding: 2%;
+            width: 29.5%;
+        }
+
+        textarea {
+            padding: 2%;
+            margin-top: 8%;
+            width: 46.5vw;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            text-align: center;
+        }
+    }
+
+    .contact-us {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .contact-info {
+        padding: 2% 2%;
+        margin-top: -8.3vh;
 
 
-       span {
-           padding-left: 10%;
-       }
-   }
-   #send-now {
-       padding: 2% 5%;
-       border-radius: 15px;
-       margin-top: 6%;
-       font-size: 70%;
-       margin:auto;
-       margin-bottom: 5%;
-   }
-   #copyright {
-       text-align: center;
-       color: white;
-       padding: 4% 2% 1%;
-       font-size: 1.2rem;
-   }
-.socials{
-    width: 28vw;
-    font-size: large;
-}
-#phone{
-    margin-top: 2.5vh;
-}
-#email{
-    margin-top: 3vh;
-}
-#whatsapp{
-    margin-top: 2.5vh;
-  
-}
-#text{
-    margin-left: vw;
-}
-#emails{
-    margin-left: 0.5vw
-}
+        span {
+            padding-left: 10%;
+        }
+    }
+
+    #send-now {
+        padding: 2% 5%;
+        border-radius: 15px;
+        margin-top: 6%;
+        font-size: 70%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    #copyright {
+        text-align: center;
+        color: white;
+        padding: 4% 2% 1%;
+        font-size: 1.2rem;
+    }
+
+    .socials {
+        width: 28vw;
+        font-size: large;
+    }
+
+    #phone {
+        margin-top: 2.5vh;
+    }
+
+    #email {
+        margin-top: 3vh;
+    }
+
+    #whatsapp {
+        margin-top: 2.5vh;
+
+    }
+
+    #text {
+        margin-left: vw;
+    }
+
+    #emails {
+        margin-left: 0.5vw
+    }
 }
