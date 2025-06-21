@@ -16,7 +16,7 @@
     </div>
     <nav class="navigation-background">
         <div class="navigation_bar">
-            <img src="images/sokoconnectlogo.png" id="soko_connect">
+            <img src="images/sokoconnectlogo-removebg-preview.png" id="soko_connect">
             <div class="hamburger" id="hamburger">
                 <i class="fa fa-bars"></i>
             </div>
@@ -40,22 +40,22 @@
     </div>
     <div class="services">
         <div class="service">
-            <img src="images/proximityla.png" alt="">
+            <img src="images/proximityla.png"alt="" class="service-image">
             <h2>Close Proximity</h2>
             <p>Find Mama Mbogas within 500 meters</p>
         </div>
         <div class="service">
-            <img src="images/freshla.png" alt="">
+            <img src="images/freshlast-removebg-preview.png" alt="" class="service-images">
             <h2>Fresh Products</h2>
             <p>Freshly prepared items with love</p>
         </div>
         <div class="service">
-            <img src="images/qualityla.png" alt="">
+            <img src="images/qualitylast-removebg-preview.png" alt="" class="service-image">
             <h2>High Quality</h2>
             <p>High quality and standard products by vendors</p>
         </div>
         <div class="service">
-            <img src="images/supportla.png" alt="">
+            <img src="images/supportla-removebg-preview.png" alt="" class="service-image">
             <h2>Support</h2>
             <p>Support to our customers</p>
         </div>
@@ -116,7 +116,93 @@
                 <img id="cabbage" src="images/cabbagecut.jpg" alt="cabbage">
             </div>
         </div>
+    </div> 
+    <div id="products">
+      <h1>Products</h1>
+        <div class="product-grid">
+          <div class="product">
+            <img src="images/cocumber.jpg" alt="">
+            <h3>Cucumbers</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/potatoes.jpg" alt="">
+            <h3>Potatoes</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/zukini.jpg" alt="">
+            <h3>Zucchini</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/tomatoes cut.jpg" alt="">
+            <h3>Potatoes</h3>
+            <p>Ksh 60</p>
+          </div>
+          <div class="product">
+            <img src="images/fish balls (1).jpeg" alt="">
+            <h3>Fish Balls</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/fish sticks (1).webp" alt="">
+            <h3>Fish Sticks</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/fish skew (1).webp" alt="">
+            <h3>Fish Skews</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/fulu fish (1).jpeg" alt="">
+            <h3>Fulu Fish</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/blackbeans (1).jpg" alt="">
+            <h3>Black Beans</h3>
+            <p>Ksh 40</p>
+          </div>
+          <div class="product">
+            <img src="images/green gram.jpg" alt="">
+            <h3>Green Grams</h3>
+            <p>Ksh 50</p>
+          </div>
+          <div class="product">
+            <img src="images/ginger.jpg" alt="">
+            <h3>Ginger</h3>
+            <p>Ksh 20</p>
+          </div>
+          <div class="product">
+            <img src="images/lentils.jpg" alt="">
+            <h3>Lentils</h3>
+            <p>Ksh 50</p>
+          </div>
+        </div>
     </div>
+    <div id="testimonials">
+      <h1>Testimonials</h1>
+      <h2>Our satisfied customers say</h2>
+      <div class="testimonial-grid">
+          <div class="testimonial">
+              <img src="images/vg10.jpg" alt="">
+              <p>"I’ve saved both time and money with this app."</p>
+              <h3>Kevin Andrew</h3>
+          </div>
+          <div class="testimonial">
+              <img src="images/vd2.jpg" alt="">
+              <p>"I get the fresh and best quality groceries"</p>
+              <h3>Mary Jane</h3>
+          </div>
+          <div class="testimonial">
+              <img src="images/vg4.jpg" alt="">
+              <p>"The Mama Mboga's always provide good services."</p>
+              <h3>Eric Jackson</h3>
+          </div>
+      </div>
+     </div>
     <div id="get-app">
         <div>
             <h1>Our App</h1>
@@ -171,7 +257,7 @@
                     </p>
                 </div>
                 <div class="socials">
-                    <svg id="email" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="email" xmlns="http://www.w3.org/2000/svg" width="45" height="26" viewBox="0 0 24 24"
                         aria-hidden="true" focusable="false">
                         <path fill="currentColor" fill-rule="evenodd"
                             d="m4.2 5.2l7.56 5.67a.4.4 0 0 0 .48 0L19.8 5.2zm16.6.75l-7.84 5.88a1.6 1.6 0 0 1-1.92 0L3.2 5.95V18.8h17.6zM3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1" />
@@ -206,9 +292,8 @@
 
         closeX.addEventListener('click', () => {
             navLinks.classList.remove('open');
-            hamburger.classList.remove('hide');
+            hamburger.classList.remove('hide'); 
         });
-
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('open');
