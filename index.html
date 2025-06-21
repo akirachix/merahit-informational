@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +11,69 @@
 </head>
 
 <body>
+    <div class="introduction">
+        <p>Skip the Line, Savor the Taste!</p>
+    </div>
+    <nav class="navigation-background">
+        <div class="navigation_bar">
+            <img src="images/sokoconnectlogo.png" id="soko_connect">
+            <div class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li class="close-x" id="closeX">
+                    <i class="fa fa-times"></i>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials" id="testimonials-page">Testimonials</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home">
+        <div class="home-text">
+            <h1>We Serve Fresh Pre-Prepared Vegetables, Cereals, and Fish</h1>
+            <a href="#get-app" id="get_btn">Get the App</a>
+        </div>
+    </div>
+    <div class="services">
+        <div class="service">
+            <img src="images/proximityla.png" alt="">
+            <h2>Close Proximity</h2>
+            <p>Find Mama Mbogas within 500 meters</p>
+        </div>
+        <div class="service">
+            <img src="images/freshla.png" alt="">
+            <h2>Fresh Products</h2>
+            <p>Freshly prepared items with love</p>
+        </div>
+        <div class="service">
+            <img src="images/qualityla.png" alt="">
+            <h2>High Quality</h2>
+            <p>High quality and standard products by vendors</p>
+        </div>
+        <div class="service">
+            <img src="images/supportla.png" alt="">
+            <h2>Support</h2>
+            <p>Support to our customers</p>
+        </div>
+    </div>
+    <div id="about">
+        <div>
+            <h1>About Us</h1>
+            <p>We connect customers to nearby Mama Mboga vendors for quick and easy access to pre-prepared foods.</p>
+            <div class="about-us">
+                <p><i class="fa-solid fa-clock"></i> <strong>Working hours:</strong> Mon-Sat 8:00 AM to 9:00 PM</p>
+                <p><i class="fa-solid fa-location-dot"></i> <strong>Mama Mbogas:</strong> Within 500 meters radius</p>
+            </div>
+            <button id="contact-us-button">Contact Us</button>
+        </div>
+        <img src="./images/about_us_now-removebg-preview.png" alt="">
+    </div>
+
+
 
     <div class="product-categories">
         <div class="item"><span>Cereals</span><img src="images/white beans.jpg" alt="Cereals"></div>
@@ -132,6 +194,29 @@
     <footer id="copyright">
         <p>@Copyright 2025 reserved to Soko Connect</p>
     </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const closeX = document.getElementById('closeX');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.add('open');
+            hamburger.classList.add('hide'); // Hide hamburger when menu opens
+        });
+
+        closeX.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            hamburger.classList.remove('hide'); // Show hamburger when menu closes
+        });
+
+        // Optional: close nav when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('hide');
+            });
+        });
+    </script>
 
 </body>
 
